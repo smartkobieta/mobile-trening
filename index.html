@@ -27,14 +27,29 @@
   </head>
 
   <body>
-    <!---------------------the head of the site------------------
+    <!---------------------the head of the site------------------>
 
     <header class="header">
-      <div class="container header-container">
+      <div class="container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
             >WEB<span>Studio</span></a
           >
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
 
           <ul class="header-menu list">
             <li class="header-menu-item">
@@ -53,7 +68,7 @@
           </ul>
         </nav>
 
-        <!---------------------ADRESS----------------------------------
+        <!--------------------ADRESS---------------------------------->
         <address class="address">
           <ul class="header-adr list">
             <li class="header-menu">
@@ -71,9 +86,8 @@
       </div>
     </header>
 
-    <!--the main part of the site--
     <main>
-      <!-----------------------SECTION HERO-TITLO-------------------
+      <!---------------------SECTION HERO-TITLO------------------>
 
       <section class="hero">
         <div class="container container-titlo">
@@ -85,64 +99,65 @@
       </section>
 
       <!-------------ADVANTAGES-------------------------------------->
-    <section class="advantages">
-      <div class="container">
-        <h2 class="visually-hidden">Advantages</h2>
-        <ul class="advantages-menu list">
-          <li class="advantages-menu-item">
-            <div class="advantages-container-icon">
-              <svg class="advant-soc-icon" width="64" height="64">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-            </div>
-            <h3 class="hero-advantages">Strategy</h3>
-            <p class="hero-advantages-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="advantages-menu-item">
-            <div class="advantages-container-icon">
-              <svg class="advant-soc-icon" width="64" height="64">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </div>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">Advantages</h2>
+          <ul class="advantages-menu list">
+            <li class="advantages-menu-item">
+              <div class="advantages-container-icon">
+                <svg class="advant-soc-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
 
-            <h3 class="hero-advantages">Punctuality</h3>
-            <p class="hero-advantages-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="advantages-menu-item">
-            <div class="advantages-container-icon">
-              <svg class="advant-soc-icon" width="64" height="64">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </div>
-            <h3 class="hero-advantages">Diligence</h3>
-            <p class="hero-advantages-text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="advantages-menu-item">
-            <div class="advantages-container-icon">
-              <svg class="advant-soc-icon" width="64" height="64">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="hero-advantages">Technologies</h3>
-            <p class="hero-advantages-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+              <h3 class="hero-advantages">Strategy</h3>
+              <p class="hero-advantages-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="advantages-menu-item">
+              <div class="advantages-container-icon">
+                <svg class="advant-soc-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
 
-    <!-------------WHAT ARE WE DOING----------------------------------------
+              <h3 class="hero-advantages">Punctuality</h3>
+              <p class="hero-advantages-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="advantages-menu-item">
+              <div class="advantages-container-icon">
+                <svg class="advant-soc-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="hero-advantages">Diligence</h3>
+              <p class="hero-advantages-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="advantages-menu-item">
+              <div class="advantages-container-icon">
+                <svg class="advant-soc-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="hero-advantages">Technologies</h3>
+              <p class="hero-advantages-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!------------WHAT ARE WE DOING------------------------------>
       <section class="result">
         <div class="container">
           <h2 class="hero-result">What are we doing</h2>
@@ -175,7 +190,7 @@
         </div>
       </section>
 
-      <!----------------OUR TEAM---------------------------------
+      <!----------------OUR TEAM--------------------------------->
       <section class="team-section">
         <div class="container team">
           <h2 class="hero-result our-team">Our Team</h2>
@@ -188,8 +203,8 @@
                 height="260"
               />
               <div class="posada">
-                <h3 class="hero-advantages team-centr">Mark Guerrero</h3>
-                <p class="hero-advantages-text text-centr">Product Designer</p>
+                <h3 class="advantages-team-centr">Mark Guerrero</h3>
+                <p class="advantages-text-centr">Product Designer</p>
                 <ul class="hero-soc list">
                   <li class="hero-soc-item">
                     <a
@@ -254,10 +269,8 @@
                 height="260"
               />
               <div class="posada">
-                <h3 class="hero-advantages team-centr">Tom Ford</h3>
-                <p class="hero-advantages-text text-centr">
-                  Frontend Developer
-                </p>
+                <h3 class="advantages-team-centr">Tom Ford</h3>
+                <p class="advantages-text-centr">Frontend Developer</p>
                 <ul class="hero-soc list">
                   <li class="hero-soc-item">
                     <a
@@ -321,8 +334,8 @@
                 height="260"
               />
               <div class="posada">
-                <h3 class="hero-advantages team-centr">Camila Garcia</h3>
-                <p class="hero-advantages-text text-centr">Marketing</p>
+                <h3 class="advantages-team-centr">Camila Garcia</h3>
+                <p class="advantages-text-centr">Marketing</p>
                 <ul class="hero-soc list">
                   <li class="hero-soc-item">
                     <a
@@ -385,8 +398,8 @@
                 height="260"
               />
               <div class="posada">
-                <h3 class="hero-advantages team-centr">Daniel Wilson</h3>
-                <p class="hero-advantages-text text-centr">UI Designer</p>
+                <h3 class="advantages-team-centr">Daniel Wilson</h3>
+                <p class="advantages-text-centr">UI Designer</p>
                 <ul class="hero-soc list">
                   <li class="hero-soc-item">
                     <a
@@ -444,7 +457,7 @@
         </div>
       </section>
 
-      <!-----------CUSTOMERS-------------------
+      <!-----------CUSTOMERS------------------->
       <section class="container-customers">
         <div class="container customers">
           <h2 class="header-customers">Customers</h2>
@@ -532,7 +545,7 @@
       </section>
     </main>
 
-    <!--footer part--
+    <!------------------footer part------------------>
     <footer class="footer-bgr">
       <div class="container container-footer">
         <div class="footer-cont">
@@ -599,7 +612,7 @@
           </ul>
         </div>
 
-        <!---------SUBSCRIBE-----------------------------
+        <!---------SUBSCRIBE----------------------------->
         <div class="subscribe">
           <p class="paragraf-social">Subscribe</p>
           <form class="form-subscribe">
@@ -721,7 +734,83 @@ Text input</textarea
         </form>
       </div>
     </div>
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <div class="mobile-contakt">
+        <li><a class="link mobile-menu-link" href="./index.html">Studio</a>
+        </li>
+        <li><a class="link mobile-menu-link" href="./portfolio.html">Portfolio</a></li>
+
+        <li><a class="link mobile-menu-link" href="">Contacts</a></li>
+</div>
+         <li><a class="link mobile-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a
+              ></li>  
+        <li><a class="link mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></a></li>
+           
+      </ul>
+
+       <ul class="mobile-menu hero-soc">
+        <li><a
+                      class="header-soc-link mobile-soc-ikon link"
+                      href=""
+                      aria-label="instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a></li>
+        <li><a
+                      class="header-soc-link link"
+                      href=""
+                      aria-label="twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a></li>
+        <li><a
+                      class="header-soc-link link"
+                      href=""
+                      aria-label="facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a></li>
+        <li><a
+                      class="header-soc-link link"
+                      href=""
+                      aria-label="linkedln"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="header-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a></li>
+      </ul>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
