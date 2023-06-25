@@ -2,6 +2,17 @@
   .container {
     max-width: 428px;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-mobile-2x.jpg);
+    }
+  }
 }
 
 @media screen and (max-width: 1158px) {
@@ -11,6 +22,8 @@
   .result {
     display: none;
   }
+}
+@media (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -47,6 +60,46 @@
     width: calc((100% - 48px) / 3);
     height: 88px;
   }
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-2x.jpg);
+    }
+  }
+  /*mob-menu-toggle {
+    display: none;
+  }
+  /*.mobil-btn-menu {
+    display: block;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-logo {
+    padding-left: 16px;
+  }
+  .header-adr {
+    display: none;
+  }*/
 }
 
 @media screen and (min-width: 1158px) {
@@ -69,9 +122,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--hero-text-color);
-    margin-bottom: 8px;
   }
 
   .hero-advantages-text {
@@ -79,12 +129,10 @@
   }
 
   .advantages-menu-item {
-    padding-left: 0;
     width: calc((100% - 72px) / 4);
     max-width: 264px;
   }
   .advantages-menu {
-    display: flex;
     gap: 24px;
   }
   .team-menu-item {
@@ -102,5 +150,45 @@
   .customers-menu-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+  }
+  .footer-bgr {
+    padding: 100px 0;
+  }
+  .footer-cont {
+    text-align: left;
+  }
+  .paragraf-social {
+    text-align: left;
+  }
+  .subscribe-button {
+    margin-left: 24px;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 }
